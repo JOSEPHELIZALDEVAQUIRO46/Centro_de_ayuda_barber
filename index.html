@@ -1,11 +1,385 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Centro de Ayuda - Barber Face</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello word</h1>
+    <header class="bg-dark text-white py-5">
+        <div class="container">
+            <h1 class="text-center"><i class="fas fa-cut me-2"></i>Centro de Ayuda Barber Face</h1>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#usuarios">Usuarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#barberos">Barberos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#administradores">Administradores</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="usuarios" class="mb-5">
+        <h2 class="border-bottom pb-2 mb-1 ms-4 mt-2 ">Ayuda para Usuarios</h2>
+        <div class="section-content">
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1584316712724-f5d4b188fee2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Usuario reservando una cita" class="img-fluid">
+            </div>
+            <div class="text-container">
+                <p class="ms-4 me-2">Nuestra aplicación móvil para usuarios está diseñada para hacer que tu experiencia de reserva de citas sea fácil y conveniente. Aquí encontrarás respuestas a las preguntas más comunes sobre cómo usar la aplicación.</p>
+            </div>
+        </div>
+        <div class="accordion" id="accordionUsuarios">
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingUser1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUser1" aria-expanded="true" aria-controls="collapseUser1">
+                        ¿Cómo puedo crear una cuenta en Barber Face?
+                    </button>
+                </h3>
+                <div id="collapseUser1" class="accordion-collapse collapse show" aria-labelledby="headingUser1" data-bs-parent="#accordionUsuarios">
+                    <div class="accordion-body">
+                        Para crear una cuenta en Barber Face:
+                        <ol>
+                            <li>Descarga la aplicación desde Google Play "Barber Face".</li>
+                            <li>Abre la aplicación y selecciona "Registrarse".</li>
+                            <li>Ingresa tu dirección de correo electrónico.</li>
+                            <li>Crea una contraseña segura.</li>
+                            <li>Completa tu perfil con tu nombre y número de teléfono.</li>
+                            <li>¡Listo! Ya puedes comenzar a usar Barber Face.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingUser2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUser2" aria-expanded="false" aria-controls="collapseUser2">
+                        ¿Cómo puedo agendar una cita?
+                    </button>
+                </h3>
+                <div id="collapseUser2" class="accordion-collapse collapse" aria-labelledby="headingUser2" data-bs-parent="#accordionUsuarios">
+                    <div class="accordion-body">
+                        Para agendar una cita:
+                        <ol>
+                            <li>Inicia sesión en la aplicación.</li>
+                            <li>En el menu inferior, selecciona "Gestion".</li>
+                            <li>Elige "Agendar cita".</li>
+                            <li>Completa el formulario</li>
+                            <li>Selecciona el barbero de tu preferencia.</li>
+                            <li>Confirma tu reserva.</li>
+                            <li>Recibirás un aviso de confirmación.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingUser2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUser2" aria-expanded="false" aria-controls="collapseUser2">
+                        ¿Cómo puedo ver la disponibilidad y experencia del barbero?
+                    </button>
+                </h3>
+                <div id="collapseUser2" class="accordion-collapse collapse" aria-labelledby="headingUser2" data-bs-parent="#accordionUsuarios">
+                    <div class="accordion-body">
+                        <ol>
+                            <li>Inicia sesión en la aplicación.</li>
+                            <li>En el menu inferior, selecciona "Gestion".</li>
+                            <li>Haz click en la imagen del barbero>
+                            <li>Podras encontrar la información sobre el barbero</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingUser4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUser4" aria-expanded="false" aria-controls="collapseUser4">
+                        ¿Cómo puedo ver los servicios ofrecidos y sus precios?
+                    </button>
+                </h3>
+                <div id="collapseUser4" class="accordion-collapse collapse" aria-labelledby="headingUser4" data-bs-parent="#accordionUsuarios">
+                    <div class="accordion-body">
+                        Para ver los servicios y precios:
+                        <ol>
+                            <li>Inicia sesión en la aplicación.</li>
+                            <li>Ve a la sección "Servicios" en la parte inferior.</li>
+                            <li>Verás una lista de todos los servicios ofrecidos con sus respectivos precios.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingUser5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUser5" aria-expanded="false" aria-controls="collapseUser5">
+                        ¿Cómo puedo actualizar mi información de perfil?
+                    </button>
+                </h3>
+                <div id="collapseUser5" class="accordion-collapse collapse" aria-labelledby="headingUser5" data-bs-parent="#accordionUsuarios">
+                    <div class="accordion-body">
+                        Para actualizar tu perfil:
+                        <ol>
+                            <li>Inicia sesión en la aplicación.</li>
+                            <li>Ve a la sección "Mi Perfil" en la parte inferior.</li>
+                            <li>Actualiza la información que desees.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingUser6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUser6" aria-expanded="false" aria-controls="collapseUser6">
+                        ¿Cómo puedo ver el mapa en la pantalla principal?
+                    </button>
+                </h3>
+                <div id="collapseUser6" class="accordion-collapse collapse" aria-labelledby="headingUser6" data-bs-parent="#accordionUsuarios">
+                    <div class="accordion-body">
+                        Al registrarte, hay un botón de mapa que te permite observar la ubicación. Simplemente haz clic en el botón para acceder al mapa.
+                    </div>
+                </div>
+            </div>
+        
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingUser7">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUser7" aria-expanded="false" aria-controls="collapseUser7">
+                        ¿Cómo puedo ver los cortes realizados por los barberos?
+                    </button>
+                </h3>
+                <div id="collapseUser7" class="accordion-collapse collapse" aria-labelledby="headingUser7" data-bs-parent="#accordionUsuarios">
+                    <div class="accordion-body">
+                        En la sección de gestión, puedes acceder al catálogo donde podrás ver todos los cortes realizados por los barberos. Esto te permitirá revisar sus trabajos y elegir el estilo que más te guste.
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+            <!-- Continuará con más preguntas en la siguiente parte -->
+        </div>
+    </section>
+
+    <section id="barberos" class="mb-5">
+    <h2 class="border-bottom pb-2 mb-1 ms-4 mt-2">Ayuda para Barberos</h2>
+    <div class="section-content">
+        <div class="text-container">
+            <p class="ms-4 me-2">Como barbero profesional, nuestra plataforma te ofrece herramientas para gestionar eficientemente tu agenda, mostrar tu trabajo y conectar con tus clientes. Aprende a sacar el máximo provecho de estas funciones.</p>
+        </div>
+        <div class="image-container">
+            <img src="https://franquicia.org.mx/wp-content/uploads/2022/10/barberia-1200x740.jpg.webp" alt="Usuario reservando una cita" class="img-fluid">
+        </div>
+        </div>
+        <div class="accordion" id="accordionBarberos">
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingBarber1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBarber1" aria-expanded="true" aria-controls="collapseBarber1">
+                        ¿Cómo puedo acceder a mi cuenta de barbero?
+                    </button>
+                </h3>
+                <div id="collapseBarber1" class="accordion-collapse collapse show" aria-labelledby="headingBarber1" data-bs-parent="#accordionBarberos">
+                    <div class="accordion-body">
+                        Para acceder a tu cuenta de barbero:
+                        <ol>
+                            <li>Instala la APK proporcionada por el administradir.</li>
+                            <li>Abre la aplicación y selecciona "Iniciar sesión".</li>
+                            <li>Registrate con tu cuenta de Google.</li>
+                            <li>Ya puedes empezar a navegar.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingBarber2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBarber2" aria-expanded="false" aria-controls="collapseBarber2">
+                        ¿Cómo puedo ver mis citas programadas?
+                    </button>
+                </h3>
+                <div id="collapseBarber2" class="accordion-collapse collapse" aria-labelledby="headingBarber2" data-bs-parent="#accordionBarberos">
+                    <div class="accordion-body">
+                        Para ver tus citas programadas:
+                        <ol>
+                            <li>Inicia sesión en la aplicación de barbero.</li>
+                            <li>En la parte inferior, verás tus mensajes del día.</li>
+                            <li>Cada cita mostrará el nombre del cliente, número de teléfono, la hora y la fecha.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingBarber3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBarber3" aria-expanded="false" aria-controls="collapseBarber3">
+                        ¿Cómo puedo actualizar mi disponibilidad?
+                    </button>
+                </h3>
+                <div id="collapseBarber3" class="accordion-collapse collapse" aria-labelledby="headingBarber3" data-bs-parent="#accordionBarberos">
+                    <div class="accordion-body">
+                        Para actualizar tu disponibilidad:
+                        <ol>
+                            <li>Debes pedirle al administrador que lo haga.</li>
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingBarber5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBarber5" aria-expanded="false" aria-controls="collapseBarber5">
+                        ¿Cómo puedo actulizar mi perfil?
+                    </button>
+                </h3>
+                <div id="collapseBarber5" class="accordion-collapse collapse" aria-labelledby="headingBarber5" data-bs-parent="#accordionBarberos">
+                    <div class="accordion-body">
+                        <ol>
+                            <li>En la parte inferior selecciona perfil.</li>
+                            <li>Sube una foto para actualizar tu perfil</li>
+                          </ol>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Continuará con más preguntas en la siguiente parte -->
+        </div>
+    </section>
+
+    <section id="administradores" class="mb-5">
+        <h2 class="border-bottom pb-2 mb-1 ms-4 mt-2">Ayuda para Administradores</h2>
+        <div class="row mb-4">
+            <div class="image-container">
+                <img src="https://orientacion.universia.net.co/imgs2011/imagenes/man-with-p-2022_10_03_173439@2x.jpg" alt="Usuario reservando una cita" class="img-fluid">
+            </div>  
+            <div class="text-container">
+                <p class="ms-4 me-2">Como administrador, tienes acceso al panel web para gestionar todos los aspectos de la barbería. Aquí encontrarás respuestas a las preguntas más comunes sobre cómo usar el panel de administración.</p>
+            </div>
+        </div>
+        <div class="accordion" id="accordionAdmins">
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingAdmin1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin1" aria-expanded="true" aria-controls="collapseAdmin1">
+                        ¿Cómo puedo acceder al panel de administración?
+                    </button>
+                </h3>
+                <div id="collapseAdmin1" class="accordion-collapse collapse show" aria-labelledby="headingAdmin1" data-bs-parent="#accordionAdmins">
+                    <div class="accordion-body">
+                        Para acceder al panel de administración:
+                        <ol>
+                            <li>Abre tu navegador web y ve a "barberdface.website".</li>
+                            <li>Ingresa tu nombre de usuario y contraseña de administrador.</li>
+                            <li>Una vez dentro, tendrás acceso a todas las funciones de administración.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingAdmin2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin2" aria-expanded="false" aria-controls="collapseAdmin2">
+                        ¿Cómo puedo añadir un nuevo barbero al sistema?
+                    </button>
+                </h3>
+                <div id="collapseAdmin2" class="accordion-collapse collapse" aria-labelledby="headingAdmin2" data-bs-parent="#accordionAdmins">
+                    <div class="accordion-body">
+                        Para añadir un nuevo barbero:
+                        <ol>
+                            <li>En el panel de administración, ve a la sección "Barberos".</li>
+                            <li>Haz clic en "Añadir Nuevo Barbero".</li>
+                            <li>Completa el formulario con los datos del barbero (nombre, correo, años de experiencia, especialidad, etc.).</li>
+                            <li>Listo ya lo tienes agregado.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingAdmin3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin3" aria-expanded="false" aria-controls="collapseAdmin3">
+                        ¿Cómo puedo gestionar los servicios ofrecidos?
+                    </button>
+                </h3>
+                <div id="collapseAdmin3" class="accordion-collapse collapse" aria-labelledby="headingAdmin3" data-bs-parent="#accordionAdmins">
+                    <div class="accordion-body">
+                        Para gestionar los servicios:
+                        <ol>
+                            <li>Ve a la sección "Servicios" en el panel de administración.</li>
+                            <li>Aquí verás una tabla de todos los servicios actuales.</li>
+                            <li>Para añadir un nuevo servicio, haz clic en "Añadir Servicio" y completa el formulario con nombre, descripción, duración estimada y precio.</li>
+                            <li>Para editar un servicio existente, haz clic en el botón "Editar" junto al servicio deseado.</li>
+                            <li>Para eliminar un servicio, usa el botón "Eliminar", pero ten cuidado, esta acción no se puede deshacer.</li>
+                            <li>Recuerda actualizar a los barberos sobre cualquier cambio en los servicios ofrecidos.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingAdmin5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin5" aria-expanded="false" aria-controls="collapseAdmin5">
+                        ¿Cómo puedo gestionar las promociones?
+                    </button>
+                </h3>
+                <div id="collapseAdmin5" class="accordion-collapse collapse" aria-labelledby="headingAdmin5" data-bs-parent="#accordionAdmins">
+                    <div class="accordion-body">
+                        Para gestionar las promociones:
+                        <ol>
+                            <li>Accede a la sección "Promociones" en el panel de administración.</li>
+                            <li>Aquí verás una lista de todas las promociones activas y pasadas.</li>
+                            <li>Para crear una nueva promoción, haz clic en "Añadir Promoción".</li>
+                            <li>Completa el formulario con el título, descripción, fechas de inicio y fin, y el descuento ofrecido.</li>
+                            <li>Puedes subir una imagen para la promoción para hacerla más atractiva.</li>
+                            <li>Para editar o eliminar una promoción existente, usa los botones correspondientes junto a cada promoción en la tabla.</li>
+                            <li>Asegúrate de informar a los barberos sobre las promociones activas para que puedan promocionarlas a los clientes.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingAdmin6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin6" aria-expanded="false" aria-controls="collapseAdmin6">
+                        ¿Cómo puedo agregar mis reportes financieros?
+                    </button>
+                </h3>
+                <div id="collapseAdmin6" class="accordion-collapse collapse" aria-labelledby="headingAdmin6" data-bs-parent="#accordionAdmins">
+                    <div class="accordion-body">
+                        Para agregar los reportes financieros:
+                        <ol>
+                            <li>Ve a la sección "contabilidad" econtraras los ingresos, gastos y ganancias</li>
+                            <li>Aquí encontrarás como agregarlos de manera manual.</li>
+                            <li>Podrás verlos a través de gráficas.</li>
+                            <li>Botones de eliminar y editar por si te equivocas. Recuerda que eliminar no se puede deshacer.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2024 ADSO 2670687 - Barber Face. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
-</html>
+</html>   
